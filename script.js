@@ -4,7 +4,7 @@ document.getElementById("donationForm").onsubmit = function(event) {
     // Get the name and amount from the form
     const name = document.getElementById("name").value;
     const amount = document.getElementById("amount").value;
-    const upiId = "6309814215@ptyes"; // Replace with your UPI ID
+    const upiId = "mattashyam8-2@oksbi"; // Replace with your UPI ID
     const transactionNote = "Donation"; // Transaction note
     const currency = "INR"; // Currency
 
