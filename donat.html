@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate with PhonePe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donate to Our Cause</h1>
+        <p>Your donation can make a big difference!</p>
+
+        <form id="donationForm">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="amount">Donation Amount (INR):</label><br>
+            <input type="number" id="amount" name="amount" required><br><br>
+            
+            <button type="submit" class="donate-button">Donate via PhonePe</button>
+        </form>
+
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

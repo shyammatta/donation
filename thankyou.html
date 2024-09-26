@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Your Donation!</h1>
+        <p id="thankYouMessage"></p>
+        <p>Your generosity is much appreciated.</p>
+    </div>
+
+    <script>
+        // Get the donor's name and amount from local storage
+        const donorNames = localStorage.getItem("donorName");
+        const donationAmount = localStorage.getItem("donationAmount");
+
+        // Display the thank-you message
+        const message = `Thank you, ${donorName}, for your generous donation of INR ${donationAmount}.`;
+        document.getElementById("thankYouMessage").innerText = message;
+
+        // Optional: Clear local storage after displaying the message
+        localStorage.removeItem("donorName");
+        localStorage.removeItem("donationAmount");
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
